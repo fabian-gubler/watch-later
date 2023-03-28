@@ -2,23 +2,10 @@
 
 This is a simple web application for managing a watch later list of youtube videos
 
-## TODOs
-
-### Important
-- Remove videos from the interface
-
-### Nice to have
-- Add additional content such as blog posts
-- Categorize content
 
 ## Features
-- Parses a list of video IDs from a text file (watch_later.txt) and generates a JSON file (watch_later.json) containing the video details.
-- Provides a web interface for viewing the watch later list (src/index.html).
-- Supports removing videos from the list by clicking on a button next to each video.
-- Provides a launch script (launch.sh) for starting a Python web server and opening the web interface in the default web browser.
-- Supports additional launch script arguments:
-	- edit opens the watch_later.txt file in the default editor.
-	- clean removes the cache file (watch_later_cache.txt) and regenerates the JSON file from scratch.
+- **CLI:** Parses a list of video IDs from a text file (watch_later.txt) and generates a JSON file (watch_later.json) containing the video details.
+- **Interface:** Provides a web interface for viewing the watch later list (src/index.html).
 
 ## Requirements
 - Python (for running the web server)
@@ -39,3 +26,16 @@ The following arguments can be passed to the launch.sh script:
 - `-e/--edit`: Opens the watch_later.txt file with the default editor.
 - `-c/--clean`: Removes the cached JSON file and generates it from scratch.
 - `-a/--add <video_id>`: Adds a YouTube video with the given ID to the watch_later.txt file. If the entire YouTube URL is entered, the script will extract the video ID and add it to the file instead.
+
+## TODOs
+
+### Useful
+- Remove videos using the interface
+- Add video duration
+
+### Nice to have
+- Add additional content such as blog posts
+- Categorize content
+
+### Behavior
+- When adding a video that is already cached (has been added previously) it won't be added to the .json file
