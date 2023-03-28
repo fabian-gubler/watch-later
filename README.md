@@ -20,8 +20,9 @@ This is a simple web application for managing a watch later list of youtube vide
 ``` bash
 ./launch.sh
 
-This will start the web server and open the web interface in the default web browser.
 ```
+
+This will start the web server and open the web interface in the default web browser.
 
 ### Arguments
 The following arguments can be passed to the launch.sh script:
