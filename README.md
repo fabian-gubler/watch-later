@@ -2,6 +2,11 @@
 
 This is a simple web application for managing a watch later list of youtube videos
 
+## TODOs
+
+- Add additional content such as blog posts
+- Remove videos from the interface
+
 ## Features
 - Parses a list of video IDs from a text file (watch_later.txt) and generates a JSON file (watch_later.json) containing the video details.
 - Provides a web interface for viewing the watch later list (src/index.html).
